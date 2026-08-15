@@ -20,9 +20,10 @@ void setPortalNotifications(NotificationSettings& settings, bool enabled) {
 }
 
 bool hasActiveNotifications(const NotificationSettings& settings) {
-    return settings.emailEnabled || settings.portalEnabled;
+    return settings.emailEnabled ||
+           settings.portalEnabled ||
+           settings.smsEnabled;
 }
-
 std::string getNotificationSummary(const NotificationSettings& settings) {
     if (settings.emailEnabled && settings.portalEnabled) {
         return "Email and portal notifications are enabled.";
