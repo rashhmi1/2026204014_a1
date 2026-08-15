@@ -30,3 +30,11 @@ The current application includes:
 
 \- A completion message after execution.
 
+
+
+\## Student Information
+
+
+
+The application displays basic student information using a dedicated C++ function. This shows how functionality can be separated into reusable functions.
+
