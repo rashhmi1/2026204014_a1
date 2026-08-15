@@ -10,3 +10,6 @@ void displayProfile(const std::string& name,
 std::string getStudentId() {
     return "2026204014";
 }
+std::string getAcademicYear() {
+    return "2026-2027";
+}
