@@ -15,3 +15,9 @@ void displayNotificationSettings(const NotificationSettings& settings) {
               << (settings.portalEnabled ? "Enabled" : "Disabled")
               << std::endl;
 }
+void setEmailNotifications(NotificationSettings& settings, bool enabled) {
+    settings.emailEnabled = enabled;
+}
+void setPortalNotifications(NotificationSettings& settings, bool enabled) {
+    settings.portalEnabled = enabled;
+}
