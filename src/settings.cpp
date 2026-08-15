@@ -6,3 +6,10 @@ void displaySettings() {
     std::cout << "2. Privacy" << std::endl;
     std::cout << "3. Account" << std::endl;
 }
+void setNotifications(bool enabled) {
+    if (enabled) {
+        std::cout << "Notifications are enabled." << std::endl;
+    } else {
+        std::cout << "Notifications are disabled." << std::endl;
+    }
+}
