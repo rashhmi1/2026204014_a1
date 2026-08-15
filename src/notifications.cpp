@@ -25,19 +25,26 @@ bool hasActiveNotifications(const NotificationSettings& settings) {
            settings.smsEnabled;
 }
 std::string getNotificationSummary(const NotificationSettings& settings) {
-    if (settings.emailEnabled && settings.portalEnabled) {
-        return "Email and portal notifications are enabled.";
-    }
+    int enabledCount = 0;
 
     if (settings.emailEnabled) {
-        return "Only email notifications are enabled.";
+        enabledCount++;
     }
 
     if (settings.portalEnabled) {
-        return "Only portal notifications are enabled.";
+        enabledCount++;
     }
 
-    return "All notifications are disabled.";
+    if (settings.smsEnabled) {
+        enabledCount++;
+    }
+
+    if (enabledCount == 0) {
+        return "All notifications are disabled.";
+    }
+
+    return std::to_string(enabledCount) +
+           " notification channel(s) are enabled.";
 }
 
 bool validateNotificationSettings(const NotificationSettings& settings) {
