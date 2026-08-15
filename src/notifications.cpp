@@ -3,17 +3,14 @@
 
 struct NotificationSettings {
     bool emailEnabled;
-    bool portalEnabled;
+bool portalEnabled;
+bool smsEnabled;
 };
 
 void displayNotificationSettings(const NotificationSettings& settings) {
-    std::cout << "\n--- Notification Settings ---" << std::endl;
-    std::cout << "Email notifications: "
-              << (settings.emailEnabled ? "Enabled" : "Disabled")
-              << std::endl;
-    std::cout << "Portal notifications: "
-              << (settings.portalEnabled ? "Enabled" : "Disabled")
-              << std::endl;
+    std::cout << "SMS notifications: "
+          << (settings.smsEnabled ? "Enabled" : "Disabled")
+          << std::endl;
 }
 void setEmailNotifications(NotificationSettings& settings, bool enabled) {
     settings.emailEnabled = enabled;
