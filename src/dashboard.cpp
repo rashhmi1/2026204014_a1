@@ -10,3 +10,12 @@ void displayCourseCount(int courseCount) {
 void displayPendingAssignments(int count) {
     std::cout << "Pending assignments: " << count << std::endl;
 }
+void displayAttendance(double attendance) {
+    std::cout << "Attendance: " << attendance << "%" << std::endl;
+
+    if (attendance >= 75.0) {
+        std::cout << "Attendance requirement satisfied." << std::endl;
+    } else {
+        std::cout << "Attendance requirement not satisfied." << std::endl;
+    }
+}
