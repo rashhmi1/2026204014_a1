@@ -21,3 +21,7 @@ void setEmailNotifications(NotificationSettings& settings, bool enabled) {
 void setPortalNotifications(NotificationSettings& settings, bool enabled) {
     settings.portalEnabled = enabled;
 }
+
+bool hasActiveNotifications(const NotificationSettings& settings) {
+    return settings.emailEnabled || settings.portalEnabled;
+}
