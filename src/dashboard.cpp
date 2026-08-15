@@ -7,3 +7,6 @@ void displayDashboard() {
 void displayCourseCount(int courseCount) {
     std::cout << "Enrolled courses: " << courseCount << std::endl;
 }
+void displayPendingAssignments(int count) {
+    std::cout << "Pending assignments: " << count << std::endl;
+}
