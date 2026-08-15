@@ -13,3 +13,10 @@ void setNotifications(bool enabled) {
         std::cout << "Notifications are disabled." << std::endl;
     }
 }
+void setPrivacyMode(bool privateMode) {
+    if (privateMode) {
+        std::cout << "Privacy mode is enabled." << std::endl;
+    } else {
+        std::cout << "Privacy mode is disabled." << std::endl;
+    }
+}
