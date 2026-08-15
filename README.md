@@ -38,3 +38,11 @@ The current application includes:
 
 The application displays basic student information using a dedicated C++ function. This shows how functionality can be separated into reusable functions.
 
+
+
+\## Academic Information
+
+
+
+The application calculates the average of three marks using a dedicated function. This demonstrates the use of functions, parameters, return values, and arithmetic operations.
+
