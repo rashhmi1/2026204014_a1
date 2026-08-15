@@ -67,4 +67,4 @@ The application evaluates the calculated average marks and determines whether th
 ## Dashboard Attendance Summary
 
 The dashboard includes an attendance summary that displays the student's current attendance percentage.
-The dashboard provides students with a quick overview of their attendance and academic progress.
+The dashboard provides students with a quick overview of attendance, academic progress, and pending academic tasks.
