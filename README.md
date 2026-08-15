@@ -54,3 +54,13 @@ The application calculates the average of three marks using a dedicated function
 
 The application evaluates the calculated average marks and determines whether the student has passed or failed. A student with an average of 40 or above is considered to have passed.
 
+
+
+\## Source Files
+
+
+
+\- `main.cpp` contains the main program logic and student information and academic result functionality.
+
+\- `student\_menu.cpp` contains the student portal menu functionality.
+

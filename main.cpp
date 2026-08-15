@@ -23,6 +23,8 @@ void displayStudentInfo() {
     std::cout << "Course: " << course << std::endl;
 }
 
+void displayMenu();
+
 double calculateAverage(int mark1, int mark2, int mark3) {
     return (mark1 + mark2 + mark3) / 3.0;
 }
@@ -39,6 +41,7 @@ int main() {
     printWelcomeMessage();
     greetUser();
     displayStudentInfo();
+    displayMenu();
     int average = calculateAverage(82, 76, 91);
     std::cout << "Average marks: " << average << std::endl;
     std::cout << "Result: " << getResult(average) << std::endl;
