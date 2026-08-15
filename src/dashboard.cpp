@@ -19,3 +19,7 @@ void displayAttendance(double attendance) {
         std::cout << "Attendance requirement not satisfied." << std::endl;
     }
 }
+void displayAttendanceSummary(double attendance) {
+    std::cout << "\n--- Attendance Summary ---" << std::endl;
+    std::cout << "Attendance: " << attendance << "%" << std::endl;
+}
