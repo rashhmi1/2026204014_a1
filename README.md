@@ -64,3 +64,6 @@ The application evaluates the calculated average marks and determines whether th
 
 \- `student\_menu.cpp` contains the student portal menu functionality.
 
+## Dashboard Attendance Summary
+
+The dashboard includes an attendance summary that displays the student's current attendance percentage.
