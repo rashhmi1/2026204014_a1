@@ -13,3 +13,12 @@ bool authenticateUser(const std::string& username,
                       const std::string& password) {
     return validateUsername(username) && validatePassword(password);
 }
+
+void displayLoginResult(const std::string& username,
+                        const std::string& password) {
+    if (authenticateUser(username, password)) {
+        std::cout << "Login validation successful." << std::endl;
+    } else {
+        std::cout << "Invalid username or password." << std::endl;
+    }
+}
