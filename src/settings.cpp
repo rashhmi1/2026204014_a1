@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 void displaySettings() {
     std::cout << "\n--- Student Portal Settings ---" << std::endl;
@@ -19,4 +20,9 @@ void setPrivacyMode(bool privateMode) {
     } else {
         std::cout << "Privacy mode is disabled." << std::endl;
     }
+}
+void displayAccountSettings(const std::string& username) {
+    std::cout << "\n--- Account Settings ---" << std::endl;
+    std::cout << "Username: " << username << std::endl;
+    std::cout << "Account status: Active" << std::endl;
 }
