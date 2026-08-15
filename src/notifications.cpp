@@ -61,6 +61,7 @@ bool validateNotificationSettings(const NotificationSettings& settings) {
 void resetNotificationSettings(NotificationSettings& settings) {
     settings.emailEnabled = false;
     settings.portalEnabled = false;
+    settings.smsEnabled = false;
 
     std::cout << "Notification settings have been reset." << std::endl;
 }
