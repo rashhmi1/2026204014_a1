@@ -41,3 +41,15 @@ std::string getNotificationSummary(const NotificationSettings& settings) {
 
     return "All notifications are disabled.";
 }
+
+bool validateNotificationSettings(const NotificationSettings& settings) {
+    if (!settings.emailEnabled && !settings.portalEnabled) {
+        std::cout << "Warning: all notifications are disabled."
+                  << std::endl;
+        return false;
+    }
+
+    std::cout << "Notification configuration is valid."
+              << std::endl;
+    return true;
+}
