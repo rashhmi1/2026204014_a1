@@ -56,3 +56,6 @@ void resetNotificationSettings(NotificationSettings& settings) {
 
     std::cout << "Notification settings have been reset." << std::endl;
 }
+void setSmsNotifications(NotificationSettings& settings, bool enabled) {
+    settings.smsEnabled = enabled;
+}
