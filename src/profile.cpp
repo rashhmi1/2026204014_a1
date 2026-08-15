@@ -7,3 +7,6 @@ void displayProfile(const std::string& name,
     std::cout << "Name: " << name << std::endl;
     std::cout << "Course: " << course << std::endl;
 }
+std::string getStudentId() {
+    return "2026204014";
+}
