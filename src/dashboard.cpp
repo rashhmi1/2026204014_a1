@@ -23,3 +23,7 @@ void displayAttendanceSummary(double attendance) {
     std::cout << "\n--- Attendance Summary ---" << std::endl;
     std::cout << "Attendance: " << attendance << "%" << std::endl;
 }
+void displayReportStatus() {
+    std::cout << "\n--- Report Status ---" << std::endl;
+    std::cout << "Academic report is available." << std::endl;
+}
