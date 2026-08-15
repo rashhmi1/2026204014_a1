@@ -13,3 +13,8 @@ std::string getStudentId() {
 std::string getAcademicYear() {
     return "2026-2027";
 }
+void displayProfileSummary() {
+    std::cout << "\n--- Profile Summary ---" << std::endl;
+    std::cout << "Student ID: " << getStudentId() << std::endl;
+    std::cout << "Academic Year: " << getAcademicYear() << std::endl;
+}
