@@ -46,3 +46,11 @@ The application displays basic student information using a dedicated C++ functio
 
 The application calculates the average of three marks using a dedicated function. This demonstrates the use of functions, parameters, return values, and arithmetic operations.
 
+
+
+\## Result Evaluation
+
+
+
+The application evaluates the calculated average marks and determines whether the student has passed or failed. A student with an average of 40 or above is considered to have passed.
+

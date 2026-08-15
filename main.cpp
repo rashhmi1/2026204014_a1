@@ -27,12 +27,21 @@ double calculateAverage(int mark1, int mark2, int mark3) {
     return (mark1 + mark2 + mark3) / 3.0;
 }
 
+std::string getResult(double average) {
+    if (average >= 40) {
+        return "Pass";
+    }
+
+    return "Fail";
+}
+
 int main() {
     printWelcomeMessage();
     greetUser();
     displayStudentInfo();
     int average = calculateAverage(82, 76, 91);
     std::cout << "Average marks: " << average << std::endl;
+    std::cout << "Result: " << getResult(average) << std::endl;
 
     int num1 = 5;
     int num2 = 10;
